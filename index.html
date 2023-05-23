@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pdf To Docx Convert</title>
+</head>
+<style>
+    body {
+        background-image: url("https://i.ibb.co/NyN9kss/download.png");
+        background-size: 40%;
+        /* background-color: black; */
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    form {
+        background-color: rgba(94, 4, 249, 0.84);
+        height: 50%;
+        width: 50%;
+        box-shadow: 0px 16p 4px 0px #bfbfbf;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-evenly; */
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    h1 {
+        font-size: 44px;
+        color: rgba(12, 1, 9, 0.788);
+
+
+    }
+
+    input {
+        width: 50%;
+        padding: 8px;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        color:rgb(247, 247, 248);
+        /* background-color:hsl(216, 98%, 55%) ; */
+    }
+
+    .button{
+        width: 50%;
+        padding: 8px;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        font-size: 14px;
+        color:rgb(247, 247, 248);
+        background-color:hsl(216, 98%, 55%) ; 
+        margin-left: 40px;
+    }
+    img{
+        height:45%;
+        width:20%;
+        margin-bottom: 30px;
+        border-radius: 12px;
+    }
+</style>
+
+<body>
+    <form action="/docxtopdf" method="post" enctype="multipart/form-data">
+        <h1>PDF to Docx Converter</h1>
+        <img src="https://i.ibb.co/gSZbVmD/images.png"/>
+        <div>
+            <input type="file" name="file" required id="">
+            <input class = 'button' type="submit" value="Download Docx File">
+        </div>
+    </form>
+</body>
+
+</html>
